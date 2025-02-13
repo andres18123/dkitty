@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dayana</title>
+  <link rel="stylesheet" href="https://use.typekit.net/rix2bim.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fkb7qqv.css">
+  <link rel="stylesheet" href="https://use.typekit.net/crb7qzp.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="myAudio" loop preload="auto">
+    <source src="audio/musica.mp3" type="audio/mpeg">
+    <source src="audio/musica.ogg" type="audio/ogg">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
+  
+  <!-- Pantalla de bienvenida -->
+  <div id="welcomeScreen">
+    <button id="startButton">Iniciar</button>
+  </div>
+  
+  <button id="musicToggle" onclick="toggleMusic()">Pausar</button>
+  
+  <div class="hearts-container" id="hearts"></div>
+  <div class="container">
+    <div class="header">
+      <img src="https://media0.giphy.com/media/ik0ZEJnTxyEle9LdI8/giphy.gif" 
+           alt="Hello Kitty" 
+           class="hello-kitty-img">
+      <h1>¡Feliz San Valentín Dayana!</h1>
+    </div>
+    <div class="valentine-card closed" onclick="openCard(event)">
+      <div class="envelope-flap"></div>
+      <div class="heart-center">🎀</div>
+      <div class="card-content">
+        <p class="message">
+          Querida Dayana,<br><br>
+          Muchas gracias por tu amistad, por ser tan increíble y maravillosa,<br>
+          que Dios cuide mucho de ti y te dé la fortaleza para seguir adelante,<br>
+          que sane todas tus batallas internas y elimine todas tus preocupaciones,<br>
+          recuerda que eres la persona más fuerte y valiente, y mereces toda la felicidad del mundo.<br><br>
+          Deseo que te vaya bien en cada aspecto de tu vida,<br>
+          que cumplas cada uno de tus sueños y metas.<br>
+          Sé que lo vas a lograr porque te lo mereces y siempre sales adelante.<br>
+          Te admiro por ser inteligente, divertida y única.<br>
+          Te quiero muchísimo y sé que todo va a estar bien.<br>
+          Prometo estar contigo hasta el final.
+        </p>
+        <p class="signature">Con todo mi cariño y gratitud, Andrés.</p>
+        <button onclick="showLove(event)">¡CUPÓN!</button>
+      </div>
+      <div class="left-message">
+        SIEMPRE <br>
+        SERÁS <br>
+        LA BEST ADC ❤️
+      </div>
+      <div class="bestadcmessage">
+        PARA:<br>LA MEJOR AMIGA<br> Y<br>ADC DEL<br> MUNDO :)
+      </div>
+      <div class="right-image">
+        <img src="https://cdn.uc.assets.prezly.com/e3c197ef-0d5d-4384-b0fe-cf74c2e239cc/-/preview/1000x1000/-/format/auto/SUNFLOWER-20.png" alt="Hello Kitty">
+      </div>
+    </div>
+  </div>
+  <button class="back-button" onclick="closeCard()">← Regresar </button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
